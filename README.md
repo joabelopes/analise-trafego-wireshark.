@@ -12,18 +12,18 @@ A captura foi realizada em ambiente controlado, filtrando o tráfego gerado pelo
 
 ### 1. Resolução DNS
 Identifiquei a requisição do meu host (`192.168.15.88`) consultando o servidor da Cloudflare (`1.1.1.1`).
-![DNS Query](img/sua_foto_dns.png)
+![DNS Query]
 
 ### 2. Handshake TCP
 Observei o estabelecimento de conexão (Three-way Handshake). Notei o uso da porta 443, indicando uma tentativa de conexão segura (HTTPS).
-![TCP Handshake](img/sua_foto_tcp.png)
+![TCP Handshake])
 
 
 
 ### 3. Requisição HTTP
 Diferente das capturas anteriores, aqui consegui visualizar o método `GET` em texto claro. 
 > **Análise de Segurança:** A visibilidade desses dados reforça o risco de ataques do tipo *Sniffing* em redes que não utilizam criptografia (TLS/SSL).
-![HTTP GET](img/sua_foto_http.png)
+![HTTP GET]
 
 ---
 
